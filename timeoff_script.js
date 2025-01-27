@@ -1,3 +1,21 @@
+document.getElementById("startDate").addEventListener("focus", function () {
+  this.type = "date"; // Change to date input when focused
+});
+
+document.getElementById("endDate").addEventListener("focus", function () {
+  this.type = "date"; // Change to date input when focused
+});
+
+document.getElementById("startDate").addEventListener("blur", function () {
+  if (this.value === "") this.type = "text"; // Reset to text input if empty
+});
+
+document.getElementById("endDate").addEventListener("blur", function () {
+  if (this.value === "") this.type = "text"; // Reset to text input if empty
+});
+
+
+
 function send() {
   // Retrieve input values
   let name = document.getElementById("name").value;
