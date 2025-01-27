@@ -2,6 +2,12 @@
   font-family: Tahoma, Arial, sans-serif;
 }
 
+section {
+  display: flex;
+  justify-content:center;
+  background-color: #111222;
+}
+
 #formContainer {
   display: flex;
   justify-content:center;
