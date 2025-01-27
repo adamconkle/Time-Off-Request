@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Off Request</title>
+    <link rel="stylesheet" type="text/css" href="timeoff_styles.css" />
+</head>
+<body>
+ <!-- Party in the front, business in the back... this simple web app looks good for the requester/employee (end user), yet is practical & bare bones for the boss (backend) - pun intended. -->
+
+<container id="formContainer">
+  <div> <!--If using form, add action="mailto:email@gmail.com" -->
+    <h1> Request for Time Off </h1>
+    <input id="name" type="text" placeholder="Your Name">
+    <br>
+    <input id="startDate" type="date" placeholder="Start Date">
+    <input id="endDate" type="date" placeholder="End Date">
+    <br>
+    <button id="submit" type="submit" onclick="send()">Send Request</button>
+  </div>  
+</container>
+
+<table id="requestsTable" border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Approved?</th>
+    </tr>
+  </thead>
+  <tbody>
+     <!-- New rows will be added here -->
+  </tbody>
+</table>
+
+
+
+  <script src="timeoff_script.js"></script> 
+
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="adamcdesigns" data-description="Support me on Buy me a coffee!" data-message="If you like Mint Tip, please consider buying me a coffee. " data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+</body>
+</html>
