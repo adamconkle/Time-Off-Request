@@ -9,17 +9,19 @@
 <body>
  <!-- Party in the front, business in the back... this simple web app looks good for the requester/employee (end user), yet is practical & bare bones for the boss (backend) - pun intended. -->
 
-<container id="formContainer">
-  <div> <!--If using form, add action="mailto:email@gmail.com" -->
-    <h1> Time Off Request </h1>
-    <input id="name" type="text" placeholder="Your Name">
-    <br>
-    <input id="startDate" type="date" placeholder="Start Date" size="12">
-    <input id="endDate" type="date" placeholder="End Date" size="12">
-    <br>
-    <button id="submit" type="submit" onclick="send()">Send Request</button>
-  </div>  
-</container>
+<section>
+    <container id="formContainer">
+      <div> <!--If using form, add action="mailto:email@gmail.com" -->
+        <h1> Time Off Request </h1>
+        <input id="name" type="text" placeholder="Your Name">
+        <br>
+        <input id="startDate" type="date" placeholder="Start Date" size="12">
+        <input id="endDate" type="date" placeholder="End Date" size="12">
+        <br>
+        <button id="submit" type="submit" onclick="send()">Send Request</button>
+      </div>  
+    </container>
+</section>
 
 <table id="requestsTable" border="1">
   <thead>
